@@ -9,7 +9,8 @@ const Produto = require("./routes/Produtos");
 const winston = require("winston");
 const {combine, timestamp, label, printf} = winston.format;
 
-const port = 3000;
+// const port = 3000;
+const port = process.env.port;
 const app = express();
 
 //configurações de log
