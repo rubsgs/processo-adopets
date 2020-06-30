@@ -49,7 +49,8 @@ app.use(session({
     secret: "adopets",
     cookie:{
         secure: false
-    }
+    },
+    resave:true
 }))
 app.use(passport.initialize());
 app.use(passport.session());
